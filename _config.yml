@@ -13,7 +13,7 @@ title                    : ":-) %%% (-:"
 title_separator          : "-"
 name                     : "Docboy"
 description              : ":-) %%% (-:"
-url                      : "atdocboy.github.io"
+url                      : #
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "atdocboy"
 teaser                   : "/images/profile.jpeg"
