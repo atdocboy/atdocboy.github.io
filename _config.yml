@@ -86,8 +86,8 @@ analytics:
 author:
   name             : "@docboy"
   avatar           : "/images/profile.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Everything at Once!!!"
-  location         : "Somewhere"
+  bio              : "~~~Everything at Once!!!"
+  location         : "India"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
