@@ -12,7 +12,7 @@ mathjax: 'true'
 published: true
 ---
 Quick cheat sheet for all Markdown commands!!!
-Credits: @adma-p (github)
+Credits: @adam-p (github)
 
 
 # H1 Heading
