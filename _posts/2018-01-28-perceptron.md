@@ -11,8 +11,7 @@ excerpt: 'Data Wrangling, Data Science, Messy Data'
 mathjax: 'true'
 published: true
 ---
-Quick cheat sheet for all Markdown commands!!!
-Credits: @adam-p (github)
+
 
 
 # H1 Heading
@@ -20,6 +19,10 @@ Credits: @adam-p (github)
 ## H2 Heading
 
 ### H3 Heading
+
+
+Quick cheat sheet for all Markdown commands!!!
+Credits: @adam-p (github)
 
 Here's some basic text.
 
