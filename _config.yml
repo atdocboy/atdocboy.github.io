@@ -17,6 +17,7 @@ url                      : #
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "atdocboy"
 teaser                   : "/images/profile.jpeg"
+logo					 : "/images/profile.jpeg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -31,7 +32,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
+  allowedFields          :  ['name', 'email', 'url', 'message']
   branch                 :  "master"
   commitMessage          :  "New comment."
   filename               :  comment-{@timestamp}
