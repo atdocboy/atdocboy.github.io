@@ -1,6 +1,7 @@
 ---
 title: Data Wrangling Project
-date: {2018-01-28}
+date:
+  'Sun Jan 28 2018 05:30:00 GMT+0530 (India Standard Time)': null
 tags:
   - data wrangling
   - data science
@@ -9,7 +10,7 @@ header:
   image: /images/perceptron/percept.jpg
 excerpt: 'Data Wrangling, Data Science, Messy Data'
 mathjax: 'true'
-published: true
+published: false
 ---
 
 
