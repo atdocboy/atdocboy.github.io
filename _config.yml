@@ -39,7 +39,7 @@ staticman:
   format                 :  "yml"
   moderation             : # true
   path                   :  "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
+  requiredFields         :  ['name', 'email', 'message']
   transforms:
     email                : # "md5"
   generatedFields:
@@ -251,7 +251,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
       share: #true
       related: #true
 
@@ -262,3 +262,5 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time : true
+      comments : true
