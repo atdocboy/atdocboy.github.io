@@ -1,6 +1,6 @@
 ---
 title: Data Wrangling Project
-date: {}
+date: {2018-01-28}
 tags:
   - data wrangling
   - data science
