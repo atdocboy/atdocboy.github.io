@@ -32,14 +32,14 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          :  ['name', 'email', 'url', 'message']
-  branch                 :  "master"
-  commitMessage          :  "New comment."
-  filename               :  comment-{@timestamp}
-  format                 :  "yml"
+  allowedFields          : #['name', 'email', 'url', 'message']
+  branch                 : #"master"
+  commitMessage          : # "New comment."
+  filename               : #comment-{@timestamp}
+  format                 : # "yml"
   moderation             : # true
-  path                   :  "/_data/comments/{options.slug}" (default)
-  requiredFields         :  ['name', 'email', 'message']
+  path                   : #"/_data/comments/{options.slug}" (default)
+  requiredFields         : #['name', 'email', 'message']
   transforms:
     email                : # "md5"
   generatedFields:
@@ -251,7 +251,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments:  true
+      comments: # true
       share: #true
       related: #true
 
@@ -263,4 +263,4 @@ defaults:
       layout: single
       author_profile: true
       read_time : true
-      comments : true
+      comments : #true
