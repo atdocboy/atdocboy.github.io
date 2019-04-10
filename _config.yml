@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : ":-) %%% (-:"
+title                    : "@Docboy"
 title_separator          : "-"
 name                     : "Docboy"
 description              : ":-) %%% (-:"
@@ -17,7 +17,7 @@ url                      : #
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "atdocboy"
 teaser                   : "/images/profile.jpeg"
-logo					 : "/images/profile.jpeg"
+logo			 : "/images/profile.jpeg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
