@@ -14,9 +14,9 @@ published: true
 # Introduction
 I am a undergrad student who is about to begin his Master's Thesis. I plan to investigate models that let us predict with some short term accuracy the behavior of time series, **specifically** *"Financial Time Series"*.
 
-I will begin with some quick posts on forecasting techniques that are conventional:
+I will begin with some recap posts on forecasting techniques that are conventional:
 Stuff like AR; MA; ARIMA; GARCH etc...
 
 I hope to quickly move on to the cutting edge deep net models.
 
-For the next one year or so, I will be regularly posting my updates on this website.
+For the next one year or so, I will regularly post updates on this website.
