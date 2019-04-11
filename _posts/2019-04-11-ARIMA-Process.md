@@ -16,3 +16,9 @@ published: true
 ---
 
 # ARIMA
+
+## What exactly is ARIMA
+
+
+
+*Note: The image used in the banner for this page is taken from Google Images*
