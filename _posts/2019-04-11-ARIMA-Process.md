@@ -1,7 +1,7 @@
 ---
 title: ARIMA Processes
 date:
-      'Thursday April 10 2019 05:30:00 GMT+0530 (India Standard Time)': null
+      'Thu April 11 2019 05:30:00 GMT+0530 (India Standard Time)': null
 tags:
   - Weekly Updates
   - data science
