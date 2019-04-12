@@ -28,7 +28,7 @@ Do note that ARIMA is represented as ARIMA(p, d, q) where the coefficients p, d 
 We now look at some sample data and model it using ARIMA. We use the bike sharing dataset from UCL-ML data repository. The code can be found on the git repo.
 
 I attach the final "naive" forecast:
-<img src="{{ site.url }}{{ site.baseurl }}/images/ARIMA/final_forecast.jpg" alt="ARIMA forecast">
+<img src="{{ site.url }}{{ site.baseurl }}/images/ARIMA/final_forecast.jpeg" alt="ARIMA forecast">
 
 
 
