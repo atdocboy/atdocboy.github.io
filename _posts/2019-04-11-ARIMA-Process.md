@@ -25,7 +25,7 @@ This constraint of setting the characteristic root to be 1; lets ARIMA processes
 
 Do note that ARIMA is represented as ARIMA(p, d, q) where the coefficients p, d and q represent the AR order, the differencing order and MA order respectively.
 
-We now look at some sample data and model it using ARIMA. We use the bike sharing dataset from UCL-ML data repository. The code can be found on the git repo.
+We now look at some sample data and model it using ARIMA. We use the bike sharing dataset from UCL-ML data repository. The code can be found on the git repo. [here](https://github.com/atdocboy/atdocboy.github.io/codes)
 
 I attach the final "naive" forecast:
 <img src="{{ site.url }}{{ site.baseurl }}/images/ARIMA/final_forecast.jpeg" alt="ARIMA forecast">
