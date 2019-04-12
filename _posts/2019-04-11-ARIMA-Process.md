@@ -9,7 +9,7 @@ tags:
   - AR
   - MA
 header:
-  image: /images/ARIMA/cover.jpg
+  image: /images/ARIMA/residual.jpeg
 excerpt: 'Weekly Updates, data science, Time Series'
 mathjax: 'true'
 published: true
@@ -29,9 +29,3 @@ We now look at some sample data and model it using ARIMA. We use the bike sharin
 
 I attach the final "naive" forecast:
 <img src="{{ site.url }}{{ site.baseurl }}/images/ARIMA/final_forecast.jpeg" alt="ARIMA forecast">
-
-
-
-
-
-*Note: The image used in the banner for this page is taken from Google Images*
