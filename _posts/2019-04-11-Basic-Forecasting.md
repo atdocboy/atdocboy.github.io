@@ -100,7 +100,7 @@ ggplot(data = data, aes(x = Date, y = Close, group = 1)) + geom_line(linetype = 
 
 
 
-![png](Basic_Forecasting_%2814_May_19%29_files/Basic_Forecasting_%2814_May_19%29_9_1.png)
+![png](/image/Basic_Forecasting_%2814_May_19%29_files/Basic_Forecasting_%2814_May_19%29_9_1.png)
 
 
 -----------------------------------
@@ -142,7 +142,7 @@ plot(naive_pred(data, 5), ylab = "Value", main = "Naive Method")
 ```
 
 
-![png](Basic_Forecasting_%2814_May_19%29_files/Basic_Forecasting_%2814_May_19%29_14_0.png)
+![png](/image/Basic_Forecasting_%2814_May_19%29_files/Basic_Forecasting_%2814_May_19%29_14_0.png)
 
 
 It can be seen that "naive" method is not apt for long term forecasts.
