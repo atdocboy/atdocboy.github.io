@@ -1,3 +1,19 @@
+---
+title: Basic Forecasting
+date:
+      'Tue May 14 2019 05:30:00 GMT+0530 (India Standard Time)': null
+tags:
+  - Weekly Updates
+  - data science
+  - Time series
+header:
+  image:
+excerpt: 'Weekly Updates, data science, Time Series'
+mathjax: 'true'
+published: true
+---
+
+
 
 # Simple Forecasting Methods
 ==============================================
@@ -9,7 +25,7 @@ In this notebook we document some simple forecasting techniques that are used to
 -------------------------------
 
 
-### Note: Data for AAPL stock has been taken. 
+### Note: Data for AAPL stock has been taken.
 
 We take a quick look at the structure of the data.
 
@@ -77,7 +93,7 @@ head(data)
 
 ```R
 options(repr.plot.width = 7, repr.plot.height = 4)
-ggplot(data = data, aes(x = Date, y = Close, group = 1)) + geom_line(linetype = "dashed") + 
+ggplot(data = data, aes(x = Date, y = Close, group = 1)) + geom_line(linetype = "dashed") +
     geom_point() + theme(axis.text.x = element_text(face = "bold", angle = 90)) + ggtitle("AAPL($)")
 ```
 
@@ -104,13 +120,13 @@ As is apparent, this method is inefficient when making long range forecasts. An 
 naive_pred <- function(y, h){
     size <- dim(y)
     value <- size[1]
-   
+
     # Extract the price values
     y_val = y[,2]
     k = c()
-    
+
     for (i in 1:h) {
-        k[i] = y[value, 2]        
+        k[i] = y[value, 2]
     }
     y_val <- append(y_val, k)
     return (y_val)
@@ -129,32 +145,32 @@ plot(naive_pred(data, 5), ylab = "Value", main = "Naive Method")
 ![png](Basic_Forecasting_%2814_May_19%29_files/Basic_Forecasting_%2814_May_19%29_14_0.png)
 
 
-It can be seen that "naive" method is not apt for long term forecasts. 
+It can be seen that "naive" method is not apt for long term forecasts.
 
 ----------------------------------
 
-## Average Method 
+## Average Method
 
-In this method we simply take the average of the past values and use it to obtain the forecast for the future *h* values. Simply put; 
+In this method we simply take the average of the past values and use it to obtain the forecast for the future *h* values. Simply put;
 $$y_{t+h} = \frac{\sum{y_i}}{T}$$.
 
 This method too, is unreliable.
-An R implementation of this is given below. 
+An R implementation of this is given below.
 
 
 ```R
 # We define a function for Average prediction.
 avg_pred <- function(y, h){
-    
+
     size <- dim(y)
-    
+
     # Extract the price values
     y_val = y[,2]
     val = sum(y_val)/size[1]
-    
+
     q <- c()
     for (i in 1:h) {
-        q[i] = val     
+        q[i] = val
     }
     y_val <- append(y_val, q)
     return (y_val)
@@ -171,30 +187,30 @@ plot(avg_pred(data, 5), ylab = "Value", main = "Average Method")
 ![png](Basic_Forecasting_%2814_May_19%29_files/Basic_Forecasting_%2814_May_19%29_20_0.png)
 
 
-In this case, we observe that using the average of the previous values gives us a lower forecast value than the naive method. 
+In this case, we observe that using the average of the previous values gives us a lower forecast value than the naive method.
 
 ------------------------------------
 
 ## Drift Method
 
-A variation on the naive method is to allow the forecasts to increase or decrease over time, where the amount of change over time (called the drift) is set to be the average change seen in the historical data. 
+A variation on the naive method is to allow the forecasts to increase or decrease over time, where the amount of change over time (called the drift) is set to be the average change seen in the historical data.
 
 The forecast for *t+h* is given by:
 $$y_{t+h} = y_t + h\bigg(\frac{y_t - y_1}{T-1} \bigg)$$
 
-This is equivalent to drawing a line between the first and the last points of the time series and maintaining the trend. The R implementation of this is shown below. 
+This is equivalent to drawing a line between the first and the last points of the time series and maintaining the trend. The R implementation of this is shown below.
 
 
 ```R
 # We define a function for Drift prediction.
 drift_pred <- function(y, h){
-    
+
     size <- dim(y)
-    
+
     # Extract the price values
     y_val = y[,2]
     value = y_val[size[1]]
-    
+
     q <- c()
     for (i in 1:h) {
         # Define the equation of the line
@@ -225,5 +241,4 @@ In this notebook we have demonstrated some really simple methods to forecast a g
 
 
 ### References
-1. Hyndman, R.J., & Athanasopoulos, G. (2018) Forecasting: principles and practice, 2nd edition, OTexts: Melbourne, Australia. 
-
+1. Hyndman, R.J., & Athanasopoulos, G. (2018) Forecasting: principles and practice, 2nd edition, OTexts: Melbourne, Australia.
