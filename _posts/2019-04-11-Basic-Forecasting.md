@@ -10,7 +10,7 @@ header:
   image:
 excerpt: 'Weekly Updates, data science, Time Series'
 mathjax: 'true'
-published: false #true
+published: true
 ---
 
 
